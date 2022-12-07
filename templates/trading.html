@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>登录</title>
+</head>
+<body>
+    <div class="trading">
+        <form action="" method="post" target="_self" autocomplete="on">
+            <h1>交易</h1>
+            <input type="text" name="payer" placeholder="付款方">
+            <input type="password" name="password" placeholder="密码">
+            <input type="text" name="payeed" placeholder="收款方">
+            <input type="text" name="count" placeholder="金额">
+            <input type="submit" value="付款">
+        </form>
+    </div>
+</body>
+</html>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    body{
+        height: 90vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        width: max-content;
+    }
+    input[type="text"],input[type="password"],input[type="number"]{
+        text-align: center;
+        height: 30px;
+        width: 200px;
+        margin: 5px;
+        border: 0px;
+        border-radius: 5px;
+        background-color: #e3e7e9;
+    }
+    input[type='submit']{
+        width: 200px;
+        height: 40px;
+        border-radius: 5px;
+        border: 0px;
+        color: white;
+        background-color: rgb(0, 190, 0);
+        transition: all 0.1s;
+    }
+    input[type='submit']:hover{
+        background-color: rgb(0, 151, 0);
+        transition: all 0.1s;
+    }
+    input:focus-visible {
+        outline: none 0px;
+    }
+</style>
